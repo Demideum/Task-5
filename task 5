@@ -1,0 +1,22 @@
+namespace IJunior_Task5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string firstName = "Пушкин";
+            string secondName = "Александр";
+            string dataExchange;
+
+            Console.WriteLine("Имя: " + firstName + ", Фамилия: " + secondName);
+
+            dataExchange = firstName;
+            firstName = secondName;
+            secondName = dataExchange;
+
+            Console.WriteLine("\nИмя: " + firstName + ", Фамилия: " + secondName);
+
+            Console.ReadKey();
+        }
+    }
+}
